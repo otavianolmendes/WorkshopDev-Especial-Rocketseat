@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa Criativa</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Place your kit's code here -->
+  <script src="https://kit.fontawesome.com/837335fe5e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+  <!-- <h1>{{title}}</h1> -->
+  
+  <div id="container">
+    
+    <section id="intro">
+
+      <header>
+        <a href="/">
+          <img src="./logo.png" alt="Imagem da logomarca">
+        </a>
+      </header>
+
+      <main>
+        <p>
+          Ficar em casa em períodos longos, não deve ser nada fácil.
+        </p>
+        <p>
+            Iremos catalogar ideias, <strong>brincadeiras, jogos, filmes, livros, cursos, dicas </strong> 
+            e tudo que for necessário para tornar esse momento mais interessante.
+        </p>
+        <p>
+            Comece clicando em ver ideias para ver as  ideias cadastradas e contribua adicioando a sua ideia.
+        </p>
+      </main>
+
+      <section id="buttons">
+        <button onclick="onOff()">
+          <i class="fas fa-plus"> 
+            Adicionar Ideia
+          </i>
+        </button>
+        <a href="/ideias" class="button">Ver Ideias</a>
+      </section>
+
+      <footer>
+          Com ♥️ <a href="http://rocketseat.com.br" target="_black">Rocketseat</a>
+      </footer>
+
+    </section>
+  
+    <section id="last-ideias">
+
+      {% include "all_Ideas.html" %}
+        
+      <!-- <div class="idea">
+        <img src="https://image.flaticon.com/icons/svg/2729/2729007.svg" 
+        alt="Imagem de Curso de Programação"
+        >
+        <div class="content">
+          <h3>
+            Curso de Programação
+          </h3>
+          <p>
+            Estudo
+          </p>
+          <div class="description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Voluptate praesentium libero reiciendis voluptatem, molestiae dolorem incidunt error tempora ipsam reprehenderit, 
+              alias quidem deleniti? Beatae possimus quaerat officia, voluptate eos accusamus.
+            </p>
+          <a href="#">Ir para a ideia</a>
+          </div>
+        </div>
+      </div>
+      <div class="idea">
+        <img src="https://image.flaticon.com/icons/svg/2729/2729005.svg" 
+        alt="Imagem de Exercício"
+        >
+        <div class="content">
+          <h3>
+            Fazer Exercício
+          </h3>
+          <p>
+            Saúde
+          </p>
+          <div class="description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Voluptate praesentium libero reiciendis voluptatem, molestiae dolorem incidunt error tempora ipsam reprehenderit, 
+              alias quidem deleniti? Beatae possimus quaerat officia, voluptate eos accusamus.
+            </p>
+            <a href="#">Ir para a ideia</a>
+          </div>
+        </div>
+      </div>
+      <div class="idea">
+        <img src="https://image.flaticon.com/icons/svg/2729/2729027.svg" 
+        alt="Imagem de Meditação"
+        >
+        <div class="content">
+          <h3>
+            Meditação
+          </h3>
+          <p>
+            Mentalidade
+          </p>
+          <div class="description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Voluptate praesentium libero reiciendis voluptatem, molestiae dolorem incidunt error tempora ipsam reprehenderit, 
+              alias quidem deleniti? Beatae possimus quaerat officia, voluptate eos accusamus.
+            </p>
+            <a href="#">Ir para a ideia</a>
+
+          </div>
+        </div>
+      </div> -->
+    </section>
+  </div>
+
+  <!-- Modal -->
+  {% include "modal.html" %}
+
+  <script src="/main.js"></script>
+</body>
+</html>
+

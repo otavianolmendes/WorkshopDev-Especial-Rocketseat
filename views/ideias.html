@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ideias - Casa Criativa</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Place your kit's code here -->
+  <script src="https://kit.fontawesome.com/837335fe5e.js" crossorigin="anonymous"></script>
+
+</head>
+<body id="page-ideas">
+<div id="container">
+  <header>
+    <a href="/">
+      <img src="./logo.png" alt="Imagem da logomarca">
+    </a>
+    <nav>
+      <li><a href="/">Início</a></li>
+      <li><a href="/ideias">Ideias</a></li>
+      <li><a href="#" class="button" onclick="onOff()">Nova Ideia</a></li>
+    </nav>
+  </header>
+  <section id="title">
+    <p>em exebição</p>
+    <h1>Ideias</h1>
+  </section>
+  <main>
+    <section id="ideias">
+
+      {% include "all_Ideas.html" %}
+
+
+    </section>
+  </main>
+  <footer>
+    Com ♥️ <a href="http://rocketseat.com.br" target="_black">Rocketseat</a>
+  </footer>
+
+</div>
+
+  <!-- Modal -->
+  {% include "modal.html" %}
+
+  <script src="/main.js"></script>
+</body>
+</html>
